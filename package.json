@@ -1,0 +1,22 @@
+{
+  "name": "calleboketoft.github.io",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calleboketoft/calleboketoft.github.io.git"
+  },
+  "author": "Carl-Ola Boketoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calleboketoft/calleboketoft.github.io/issues"
+  },
+  "homepage": "https://github.com/calleboketoft/calleboketoft.github.io#readme",
+  "devDependencies": {
+    "express": "^4.13.3"
+  }
+}
