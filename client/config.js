@@ -15,7 +15,8 @@ System.config({
 
   map: {
     "angular2": "npm:angular2@2.0.0-alpha.45",
-    "co-selectable-items": "npm:co-selectable-items@0.1.0",
+    "co-selectable-items": "npm:co-selectable-items@0.1.1",
+    "co-tags": "npm:co-tags@0.0.7",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "typescript": "npm:typescript@1.6.2",
     "zone.js": "npm:zone.js@0.5.8",
@@ -136,9 +137,6 @@ System.config({
       "inherits": "npm:inherits@2.0.1",
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "string_decoder": "github:jspm/nodelibs-string_decoder@0.1.0"
-    },
-    "npm:co-selectable-items@0.1.0": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:constants-browserify@0.0.1": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"

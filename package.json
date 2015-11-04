@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "./node_modules/.bin/jspm install"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,8 @@
     },
     "dependencies": {
       "angular2": "npm:angular2@^2.0.0-alpha.45",
-      "co-selectable-items": "npm:co-selectable-items@^0.1.0",
+      "co-selectable-items": "npm:co-selectable-items@^0.1.1",
+      "co-tags": "npm:co-tags@^0.0.7",
       "reflect-metadata": "npm:reflect-metadata@^0.1.2",
       "zone.js": "npm:zone.js@^0.5.8"
     },
