@@ -13,22 +13,22 @@ var angular2_1 = require('angular2/angular2');
 var http_1 = require('angular2/http');
 var DashboardComponent = (function () {
     function DashboardComponent(http) {
-        console.log('something is happening at least');
+        var _this = this;
         http.get('http://api.github.com/users/calleboketoft/repos')
             .subscribe(function (res) {
             console.log(res.json());
+            _this.filteredRepos = res.json();
         });
     }
     DashboardComponent = __decorate([
         angular2_1.Component({
             selector: 'my-dashboard',
-            template: "\n    <h2>Dashboard</h2>\n    <p>time to download some Github stuff!</p>\n  "
+            directives: [angular2_1.NgFor],
+            template: "\n    <div class=\"container\" style=\"margin-top: 25px;\">\n      <h3>Calle's Github Repos</h3>\n      <table class=\"table\">\n        <thead>\n          <tr>\n            <th>\n              Repo\n            </th>\n            <th>\n              Description\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ng-for=\"var repo of filteredRepos\">\n            <td>\n              {{repo.name}}\n            </td>\n            <td>\n              {{repo.description}}\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [http_1.Http])
     ], DashboardComponent);
     return DashboardComponent;
 })();
 exports.DashboardComponent = DashboardComponent;
-// https://api.github.com/
-// GET /users/:username/repos 
 //# sourceMappingURL=dashboard.component.js.map
