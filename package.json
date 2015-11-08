@@ -1,0 +1,17 @@
+{
+  "name": "calleboketoft.github.io",
+  "version": "0.0.1",
+  "repository": "https://github.com/calleboketoft/calleboketoft.github.io",
+  "scripts": {
+    "watch": "tsc -p src -w",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-alpha.45",
+    "systemjs": "0.19.5"
+  },
+  "devDependencies": {
+    "express": "^4.13.3",
+    "typescript": "^1.6.2"
+  }
+}
