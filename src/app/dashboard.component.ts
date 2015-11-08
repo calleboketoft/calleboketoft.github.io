@@ -1,4 +1,4 @@
-import { Component, FORM_DIRECTIVES } from 'angular2/angular2';
+import { Component, FORM_DIRECTIVES } from 'angular2/angular2'
 
 @Component({
   selector: 'my-dashboard',

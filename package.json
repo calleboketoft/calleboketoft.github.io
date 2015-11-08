@@ -4,7 +4,8 @@
   "repository": "https://github.com/calleboketoft/calleboketoft.github.io",
   "scripts": {
     "watch": "tsc -p src -w",
-    "start": "node server.js"
+    "start": "node server.js",
+    "live-server": "node_modules/.bin/live-server --open=src"
   },
   "dependencies": {
     "angular2": "2.0.0-alpha.45",

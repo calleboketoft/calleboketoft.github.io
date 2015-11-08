@@ -7,7 +7,7 @@ import { DashboardComponent } from './dashboard.component'
   template: `
     <a [router-link]="['./Dashboard']">Dashboard</a>
     <router-outlet></router-outlet>
-    `,
+  `,
   directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
