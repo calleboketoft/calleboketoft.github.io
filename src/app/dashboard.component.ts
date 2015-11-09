@@ -6,7 +6,7 @@ import { Http } from 'angular2/http'
   directives: [NgFor],
   template: `
     <div class="container" style="margin-top: 25px;">
-      <h3>Calle's Github Repos</h3>
+      <h3>Repos</h3>
       <table class="table">
         <thead>
           <tr>
@@ -36,10 +36,10 @@ export class DashboardComponent {
   filteredRepos: Array<any>
 
   constructor (http: Http) {
-    http.get('http://api.github.com/users/calleboketoft/repos')
+    http.get('http://localhost:3000')
       .subscribe((res:any) => {
         console.log(res.json())
-        this.filteredRepos = res.json()
+        this.filteredRepos = JSON.parse(res.json().body)
       })
   }
 }
